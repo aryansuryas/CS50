@@ -1,5 +1,8 @@
 code file.py   -> creates a new python file (Type in terminal)
 python file.py -> To get Output
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 from openai import OpenAI
 
 client = OpenAI()
