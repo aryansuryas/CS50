@@ -56,3 +56,12 @@ print(response.output_text)
     90-Z                               122-z
 
     A-Z :: 65-90                          a-z :: 97-122
+
+    In This The DIfference will a;ways be 32 so the 32 will be changed and res be the same
+     
+                     A                                                            a
+    128   64    32    16    8      4     2     1               128   64    32    16    8      4     2     1
+    0     1     1     0     0      0     0     1                0     1     0     0     0      0     0     1  
+
+
+
