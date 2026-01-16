@@ -9,7 +9,7 @@ $. Enter this cod in terminal :
 
 CS50 AI : https://cs50.ai/chat 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+Creating Our Own AI Chatbot
     
 from openai import OpenAI
 
