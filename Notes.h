@@ -5,7 +5,11 @@ python file.py -> To get Output
 1. Create API key from OpenAI
 2. Download Python Manager
 3.Collaab With VS Code & Download the python Etension From Microsoft
+
+    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    
 from openai import OpenAI
 
 client = OpenAI()
