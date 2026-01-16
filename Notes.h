@@ -6,7 +6,8 @@ python file.py -> To get Output
 2. Download Python Manager
 3.Collaab With VS Code & Download the python Etension From Microsoft.
 $. Enter this cod in terminal :
-    
+
+CS50 AI : https://cs50.ai/chat 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     
