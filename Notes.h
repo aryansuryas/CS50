@@ -228,3 +228,5 @@ Zeros and ones can be used to represent images, videos, and music!
 Videos are sequences of many images that are stored together, just like a flipbook.
 Music can be represented similarly using various combinations of bytes.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Algorithm :: Step by Step Instructions To Solve a Problem.
