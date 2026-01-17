@@ -5,7 +5,7 @@ python file.py -> To get Output
 1. Create API key from OpenAI
 2. Download Python Manager
 3.Collaab With VS Code & Download the python Etension From Microsoft.
-$. Enter this cod in terminal :
+$. Enter this code in terminal :
 
 CS50 AI : https://cs50.ai/chat 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -85,4 +85,4 @@ print(response.output_text)
   14 -	SO		30 -	RS		46 -	.		62 -	>	    78 -	N		94 -	^		110 -	n		126 -	~
   15 -	SI		31 -	US		47 -	/		63 -	?	    79 -	O		95 -	_		111 -	o		127 -	DEL
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
