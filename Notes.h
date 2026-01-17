@@ -88,4 +88,20 @@ print(response.output_text)
   14 -	SO		30 -	RS		46 -	.		62 -	>	    78 -	N		94 -	^		110 -	n		126 -	~
   15 -	SI		31 -	US		47 -	/		63 -	?	    79 -	O		95 -	_		111 -	o		127 -	DEL
 
+
+  
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Unicode
+As time has rolled on, there are more and more ways to communicate via text.
+Since there were not enough digits in binary to represent all the various characters that could be represented by humans, the Unicode standard expanded the number of bits that can be transmitted and understood by computers. Unicode includes not only special characters, but emoji as well.
+There are emoji that you probably use every day. The following may look familiar to you:
+
+😀 😃 😄 😁 😆 😅 😂 🙂 🙃 😉 😊 😇 😍 😘 😗 😙 😚 😋 😛 😜 😝 🤑 🤓 😎 🤗 😏 😶 😐 😑 😒 🙄 😬 😕 ☹️ 😟 😮 😯 😲 😳 😦 😧 😨
+
+While the pattern of zeros and ones is standardized within Unicode, each device manufacturer may display each emoji slightly differently than another manufacturer.
+More and more features are being added to the Unicode standard to represent further characters and emoji.
+If you wish, you can learn more about Unicode.
+If you wish, you can learn more about emoji.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
