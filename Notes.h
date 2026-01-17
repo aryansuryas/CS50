@@ -105,3 +105,15 @@ More and more features are being added to the Unicode standard to represent furt
 If you wish, you can learn more about Unicode.
 If you wish, you can learn more about emoji.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  RGB
+Zeros and ones can be used to represent color.
+Red, green, and blue (called RGB) are a combination of three numbers.
+
+72 73 33
+Taking our previously used 72, 73, and 33, which said HI! via text, would be interpreted by image readers as a light shade of yellow. The red value would be 72, the green value would be 73, and the blue would be 33.
+The three bytes required to represent various colors of red, blue, and green (or RGB) make up each pixel (or dot) of color in any digital image. Images are simply collections of RGB values.
+Zeros and ones can be used to represent images, videos, and music!
+Videos are sequences of many images that are stored together, just like a flipbook.
+Music can be represented similarly using various combinations of bytes.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
