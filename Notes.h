@@ -229,4 +229,4 @@ Videos are sequences of many images that are stored together, just like a flipbo
 Music can be represented similarly using various combinations of bytes.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Algorithm :: Step by Step Instructions To Solve a Problem.
+Algorithm :: Step by Step Instructions To Solve a Problem..
