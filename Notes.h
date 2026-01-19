@@ -11,6 +11,7 @@ upto July 6 time b to complete
 $. Enter this code in terminal :
 
 CS50 AI : https://cs50.ai/chat 
+scratch.mit.edu :  https://scratch.mit.edu/
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Creating Our Own AI Chatbot
     
