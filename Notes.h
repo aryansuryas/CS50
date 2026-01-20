@@ -256,3 +256,5 @@ Third, notice how there are expressions that can be stated as true or false, suc
 Finally, notice how there are statements like “go back to line 3.” We call these loops.
 These building blocks are the fundamentals of programming.
 In the context of Scratch, which is discussed below, we will use each of the above basic building blocks of programming.
+
+project Scratch project 
