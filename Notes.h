@@ -1,6 +1,5 @@
                                                           Introducton TO Harvard University - CS50 edX
 
-                                                                                 
 code file.py   -> creates a new python file (Type in terminal)
 python file.py -> To get Output
 upto July 6 time b to complete
