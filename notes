@@ -18,11 +18,9 @@ response = client.responses.create(
 )
 print(response.output_text)
 
---------------------------------------------------------------------------------------------------------------
-    from openai import OpenAI
-
+-------------------------------------------------------------------------------
+from openai import OpenAI
 client = OpenAI()
-
 user_prompt = input("Prompt: ")
 system_prompt = "Limit your answer to one sentence. Pretend you're a cat."
 
@@ -56,13 +54,9 @@ response = client.responses.create(
 print(response.output_text)
 Notice how a library from OpenAI is imported to give us abilities from that library. A chat client is created. Then, a question, called input is passed to the chat client for an answer. The response is then printed.
 We could improve upon this code by allowing the user to ask a question. Modify your code as follow:
-
 from openai import OpenAI
-
 client = OpenAI()
-
 prompt = input("Prompt: ")
-
 response = client.responses.create(
     input=prompt,
     model="gpt-5"
