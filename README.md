@@ -2,5 +2,5 @@
 
 Website : https://cs50.harvard.edu/                                                
 CS50 Chatbot : https://cs50.ai                                                 
-scratch.mit.edu :  https://scratch.mit.edu/
+scratch.mit.edu :  https://scratch.mit.edu/                                                                    
 cs50.dev
