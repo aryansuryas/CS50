@@ -77,7 +77,7 @@ response = client.responses.create(
 print(response.output_text)
 Notice how system_prompt is used to provide further context and instructions.
 With programming, you have the ability in ten lines of text to build very powerful programs!
-We have created our own rubber duck, the CS50 Duck, to get help in your work in this course.
+We have created our own rubber duck, the CS50 Duck, to get help in your work in this course. and also
 Keep in mind our Academic Honesty Policy, which prohibits the use of any AI tool besides the CS50 Duck.
 Computer Science and Problem Solving
 Essentially, computer programming is about taking some input and creating some output - thus solving a problem. What happens in between the input and output, what we could call a black box, is the focus of this course.
