@@ -136,7 +136,6 @@ Computers generally use eight bits (also known as a byte) to represent a number.
 
 
 --------------------------------------------------------------------------------------------------
-
                   ASCII Code
     
     65-A                              97-a
@@ -173,7 +172,7 @@ Computers generally use eight bits (also known as a byte) to represent a number.
   6 -	ACK		22 -	SYN		38 -	&		54 -	6		70 -	F		86 -	V		102 -	f		118 -	v
   7 -	BEL		23 -	ETB		39 -	’		55 -	7		71 -	G		87 -	W		103 -	g		119 -	w
   8 -	BS		24 -	CAN		40 -	(		56 -	8		72 -	H		88 -	X		104 -	h		120 -	x
-  9 -	HT		25 -	EM		41 -	)		57 -	9		73 -	I		89 -	Y		105 -	i		121 -	y
+  9 -	HT		25 -	EM		41 -	)		57 -	9		73 -	I		89 -  Y		105 -	i		121 -	y
   10 -	LF	    26 -	SUB		42 -	*		58 -	:	    74 -	J	  🟢90 -	Z		106 -	j	  🟢122 -	z
   11 -	VT		27 -	ESC		43 -	+		59 -	;	    75 -	K		91 -	[		107 -	k		123 -	{
   12 -	FF		28 -	FS		44 -	,		60 -	<	    76 -	L		92 -	\		108 -	l		124 -	|
