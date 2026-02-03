@@ -228,7 +228,7 @@ For example, considering the third algorithm above, we could compose pseudocode 
 10     Open to middle of right half of book
 11     Go back to line 3
 12 Else
-13     Quit
+13 Quit
 Pseudocoding is such an important skill for at least two reasons. First, when you pseudocode before you create formal code, it allows you to think through the logic of your problem in advance. Second, when you pseudocode, you can later provide this information to others that are seeking to understand your coding decisions and how your code works.
 Notice that the language within our pseudocode has some unique features. First, some of these lines begin with verbs like pick up, open, look at. Later, we will call these functions.
 Second, notice that some lines include statements like if or else if. These are called conditionals.
