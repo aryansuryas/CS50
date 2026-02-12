@@ -266,8 +266,7 @@ Runs the compiled executable
 ls                                          Lists files and folders in the current directory
 cd foldername                               Moves into a folder (directory)
 cd ..                                       Moves back one directory (parent folder)
-mkdir foldername
-Creates a new folder (directory)
+mkdir foldername                            Creates a new folder (directory)
 rm filename
 Deletes a file (rm hello.c)
 mv filename foldername
