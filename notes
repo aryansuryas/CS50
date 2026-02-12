@@ -267,8 +267,7 @@ ls                                          Lists files and folders in the curre
 cd foldername                               Moves into a folder (directory)
 cd ..                                       Moves back one directory (parent folder)
 mkdir foldername                            Creates a new folder (directory)
-rm filename
-Deletes a file (rm hello.c)
+rm filename                                 Deletes a file (rm hello.c)
 mv filename foldername
 Moves file to a folder
 mv filename newname
