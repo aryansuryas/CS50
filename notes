@@ -283,5 +283,31 @@ clear
 Clears entire terminal screen
 
 
+4️⃣ C/C++ Programming Notes
+Escape Sequences
+\n → New line
+
+
+\" → Print double quotes inside a string
+
+
+Example:
+
+
+printf("Hello \"world\"\n");
+
+Functions
+Parameters → variables defined in function definition
+
+
+Arguments → actual values passed when calling function
+
+
+Example:
+void greet(string name) {  // parameter: name
+    cout << "Hello " << name;
+}
+greet("John"); // argument: "John"
+
 
 
