@@ -255,14 +255,11 @@ Optional, used for declarations (see manual.cs50.io)
 2️⃣ Compiling & Running Programs
 Command
 Purpose
-make hello
-Compiles program using a Makefile (or built-in rules)
-./hello
-Runs the compiled executable
+make hello                                   Compiles program using a Makefile (or built-in rules)
+./hello                                      Runs the compiled executable
 
 
 3️⃣ Terminal Basics
-
 ls                                          Lists files and folders in the current directory
 cd foldername                               Moves into a folder (directory)
 cd ..                                       Moves back one directory (parent folder)
