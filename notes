@@ -268,16 +268,11 @@ cd foldername                               Moves into a folder (directory)
 cd ..                                       Moves back one directory (parent folder)
 mkdir foldername                            Creates a new folder (directory)
 rm filename                                 Deletes a file (rm hello.c)
-mv filename foldername
-Moves file to a folder
-mv filename newname
-Renames a file
-cp filename newfile
-Copies a file
-ctrl + L
-Clears terminal line / new line
-clear
-Clears entire terminal screen
+mv filename foldername                      Moves file to a folder
+mv filename newname                         Renames a file
+cp filename newfile                         Copies a file
+ctrl + L                                    Clears terminal line / new line
+clear                                      Clears entire terminal screen
 
 
 4️⃣ C/C++ Programming Notes
