@@ -239,19 +239,16 @@ In the context of Scratch, which is discussed below, we will use each of the abo
 
 🔴🟡🟢 project Scratch project 
 ------------------------------------------------------------------------------------- WEEK 1---------------------------------------------------------------------------
-C Programming :
-VS code setup
+# C Programming :
+
 1️⃣ Creating & Editing Files
-Command
-Purpose
-code filename
-Opens or creates a file in VS Code. You can add extensions like .c or .cpp.
+
+code filename                                     Opens or creates a file in VS Code. You can add extensions like .c or .cpp.
 Examples: code hello.c, code hello.cpp
-.c / .cpp
-Source code files for C/C++
-Header files (.h)
-Optional, used for declarations (see manual.cs50.io)
-------------------
+.c / .cpp                                          Source code files for C/C++
+Header files (.h)                                  Optional, used for declarations (see manual.cs50.io)
+
+
 2️⃣ Compiling & Running Programs
 Command
 Purpose
