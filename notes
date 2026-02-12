@@ -262,11 +262,10 @@ Runs the compiled executable
 
 
 3️⃣ Terminal Basics
-Command / Shortcut
-Purpose
-ls               Lists files and folders in the current directory
-cd foldername            Moves into a folder (directory)
-cd ..                 Moves back one directory (parent folder)
+
+ls                                          Lists files and folders in the current directory
+cd foldername                               Moves into a folder (directory)
+cd ..                                       Moves back one directory (parent folder)
 mkdir foldername
 Creates a new folder (directory)
 rm filename
