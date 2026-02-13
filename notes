@@ -84,9 +84,6 @@ For example, we may need to take attendance for a class. We could use a system c
 Computers today count using a system called binary (also called base-2). It’s from the term binary digit that we get a familiar term called bit. A bit is a zero or one: on or off.
 Computers only speak in terms of zeros and ones. Zeros represent off. Ones represent on. Computers are millions, and perhaps billions, of transistors that are being turned on and off.. ok
 If you imagine using a light bulb, a single bulb can only count from zero to one.
-However, if you were to have three light bulbs, there are more options open to you!
-Inside your devices, such as your iPhone or computer, there are millions of metaphorical light bulbs called transistors that enable the activities conducted on these devices one may take for granted each day.
-As a heuristic, we could imagine that the following values represent each possible place in our binary digit:
 
 4 2 1
 Using three light bulbs, the following could represent zero:
