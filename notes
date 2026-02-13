@@ -80,10 +80,7 @@ Computer Science and Problem Solving
 Essentially, computer programming is about taking some input and creating some output - thus solving a problem. What happens in between the input and output, what we could call a black box, is the focus of this course.
 input    ???   output
 
-For example, we may need to take attendance for a class. We could use a system called unary (also called base-1) to count one finger at a time.
-Computers today count using a system called binary (also called base-2). It’s from the term binary digit that we get a familiar term called bit. A bit is a zero or one: on or off.
-Computers only speak in terms of zeros and ones. Zeros represent off. Ones represent on. Computers are millions, and perhaps billions, of transistors that are being turned on and off.. ok
-If you imagine using a light bulb, a single bulb can only count from zero to one.
+.
 
 4 2 1
 Using three light bulbs, the following could represent zero:
