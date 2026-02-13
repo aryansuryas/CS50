@@ -273,14 +273,9 @@ clear                                       Clears entire terminal screen
 Escape Sequences
 \n → New line
 \" → Print double quotes inside a string
-
-
 Example:
 printf("Hello \"world\"\n");
-Functions
-
-
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Example:
 void greet(string name) {               // parameter: name   Parameters → variables defined in function definition
