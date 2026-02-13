@@ -279,13 +279,13 @@ Example:
 printf("Hello \"world\"\n");
 Functions
 
-Arguments → actual values passed when calling function
+
 
 
 Example:
 void greet(string name) {               // parameter: name   Parameters → variables defined in function definition
     cout << "Hello " << name;
 }
-greet("John");                  // argument: "John"
+greet("John");                  // argument: "John"            Arguments → actual values passed when calling function
 
 
