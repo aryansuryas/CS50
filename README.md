@@ -4,7 +4,8 @@ Website : https://cs50.harvard.edu/
 CS50 Chatbot : https://cs50.ai                                                 
 scratch.mit.edu :  https://scratch.mit.edu/                                                                      
 CS50 C programming manual pages : https://manual.cs50.io                                     
-cs50.h
+Header file : <include cs50.h>
+
 
 
 
