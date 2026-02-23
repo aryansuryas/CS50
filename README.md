@@ -6,7 +6,6 @@ scratch.mit.edu :  https://scratch.mit.edu/
 CS50 C programming manual pages : https://manual.cs50.io                                              
 Header file : #include <cs50.h>      
 documents : https://cs50.readthedocs.io/.               
-g
 
 
  
