@@ -91,7 +91,7 @@ Similarly, the following would represent one:
 
 4 2 1
 0 0 1
-By this logic, we could propose that the following equals two:
+By this logic, we could propose that the following equals two::
 
 4 2 1
 0 1 0
