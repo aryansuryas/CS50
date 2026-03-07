@@ -10,3 +10,4 @@ documents : https://cs50.readthedocs.io/
 
  
 # WEEK 0 : INTRODUCTION (SCRATCH PROJECT MIT )
+# WEEK 1 : C PROGRAMMING (MARIO GAME ⛰️🏔️ CODE ) 
