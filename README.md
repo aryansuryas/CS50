@@ -8,8 +8,8 @@ Header file : #include <cs50.h>
 documents : https://cs50.readthedocs.io/     
 
 
-WEEK 0 : INTRODUCTION (SCRATCH PROJECT MIT )
+WEEK 0 : INTRODUCTION (SCRATCH PROJECT MIT ) 
 WEEK 1 : C PROGRAMMING (MARIO GAME ⛰️🏔️ CODE ) 
 WEEK 2 : Introduction To Algorithms 
-WEEK 3 : MEMORY Intriaj
+WEEK 3 : MEMORY Management 
 WEEK 4 :
