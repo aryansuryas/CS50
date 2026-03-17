@@ -1,3 +1,4 @@
+🔴🟡🟢 LAST DATE : JULY 6 2026
 # 🎓 Harvard CS50x — Introduction to Computer Science X 2025
 ![CS50](https://img.shields.io/badge/Harvard-CS50x-crimson?style=for-the-badge&logo=harvard&logoColor=white)
 ![Language](https://img.shields.io/badge/Languages-C%20%7C%20Python%20%7C%20SQL%20%7C%20JS-blue?style=for-the-badge)
