@@ -17,25 +17,7 @@ CS50x is Harvard University's introduction to computer science and the art of pr
 **Cost:** Free (Certificate optional)  
 **Official Site:** [cs50.harvard.edu/x](https://cs50.harvard.edu/x)
 
-
-- [About CS50x](#-about-cs50x)
-- [Course Structure](#-course-structure)
-- [Weekly Breakdown](#-weekly-breakdown)
-  - [Week 0 — Scratch](#week-0--scratch)
-  - [Week 1 — C](#week-1--c)
-  - [Week 2 — Arrays](#week-2--arrays)
-  - [Week 3 — Algorithms](#week-3--algorithms)
-  - [Week 4 — Memory](#week-4--memory)
-  - [Week 5 — Data Structures](#week-5--data-structures)
-  - [Week 6 — Python](#week-6--python)
-  - [Week 7 — SQL](#week-7--sql)
-  - [Week AI — Artificial Intelligence](#week-ai--artificial-intelligence)
-  - [Week 8 — HTML, CSS, JavaScript](#week-8--html-css-javascript)
-  - [Week 9 — Flask](#week-9--flask)
-  - [Week 10 — The End](#week-10--the-end)
-  - [Final Project](#-final-project)
  
----
 
 ## 🏛 About CS50x
 
