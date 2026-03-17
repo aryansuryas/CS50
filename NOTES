@@ -1,0 +1,350 @@
+Harvard CS50x — Complete Course Notes
+Introduction to Computer Science — All 12 Weeks
+Week 0 — Scratch
+Introduction to computational thinking using visual, block-based programming. No typing required — the focus is on ideas and logic.
+
+Key Concepts
+•	Computational thinking — breaking a problem into smaller, solvable steps
+•	Abstraction — hiding complexity; focusing on what something does, not how
+•	Algorithms — step-by-step instructions to solve a problem
+•	Pseudocode — plain-English description of an algorithm before writing real code
+•	Functions, Loops, Conditionals, Events — the building blocks of any program
+•	Sprites, Costumes, Backdrops — Scratch-specific visual elements
+
+Problem Set 0
+Build an interactive project in Scratch — a game, animation, or story. Must use: at least one conditional, one loop, one variable, and one custom block.
+
+ 
+Week 1 — C
+Transition from visual to text-based programming with C. You learn how a computer actually executes code — no magic.
+
+Key Concepts
+•	Source code vs. machine code — humans write source; computers run machine code
+•	Compiling with clang / make — converting source to executable
+•	Variables and data types: int, float, char, string, bool
+•	Operators: +, -, *, /, % (modulo)
+•	Conditionals: if, else if, else, switch
+•	Loops: for, while, do-while
+•	Functions — named blocks of code you can call and reuse
+•	Command-line interface (CLI) basics
+•	printf and scanf — output and input in C
+•	cs50.h library: get_int(), get_string(), get_float()
+
+Problem Set 1
+•	hello — Hello, World in C
+•	mario — Print pyramid patterns using loops
+•	cash or credit — Greedy algorithm / Luhn's Algorithm
+
+ 
+Week 2 — Arrays
+Deeper into C: how data is stored in memory, how strings work under the hood, and how programs receive input from the command line.
+
+Key Concepts
+•	Compiling pipeline: preprocessing → compiling → assembling → linking
+•	Debugging with debug50 and printf statements
+•	Arrays: fixed-size collections of same-type values
+•	Array indexing starts at 0
+•	Strings are arrays of characters (char[]) ending with '\0' (null terminator)
+•	String functions: strlen(), toupper(), tolower(), isalpha(), isdigit()
+•	Command-line arguments: argc (count), argv (values array)
+•	Exit codes — 0 means success, non-zero means error
+•	Cryptography basics — how simple ciphers work
+
+Libraries Used
+•	<string.h> — string manipulation
+•	<ctype.h> — character classification
+•	<cs50.h> — CS50 input helpers
+
+Problem Set 2
+•	scrabble — Compare scrabble word scores
+•	readability — Coleman-Liau readability index
+•	caesar or substitution — Cipher encryption
+
+ 
+Week 3 — Algorithms
+How do you search for something? How do you sort a list? How do you measure how fast (or slow) your solution is? This week answers all three.
+
+Searching
+•	Linear Search — check each element one by one. O(n) worst case
+•	Binary Search — only works on sorted data; repeatedly halves the search space. O(log n)
+
+Sorting
+•	Bubble Sort — repeatedly swap adjacent elements if out of order. O(n²)
+•	Selection Sort — find the smallest element, place it first, repeat. O(n²)
+•	Merge Sort — recursively split, sort, then merge. O(n log n). Much faster for large datasets
+
+Big O Notation
+Notation	Meaning
+O(1)	Constant time — same speed regardless of input size
+O(log n)	Logarithmic — binary search
+O(n)	Linear — linear search
+O(n log n)	Log-linear — merge sort
+O(n²)	Quadratic — bubble sort, selection sort
+
+Other Concepts
+•	Recursion — a function that calls itself (with a base case to stop)
+•	struct / typedef struct — group related data into a custom type
+•	Omega (Ω) = best case; Theta (Θ) = tight bound; O = worst case
+
+Problem Set 3
+•	sort — Identify which algorithm is which from timing data
+•	plurality — Plurality voting system
+•	runoff or tideman — Ranked-choice / Condorcet voting
+
+ 
+Week 4 — Memory
+The most conceptually challenging week. You learn what memory actually is, how pointers work, and how to manage memory manually.
+
+Key Concepts
+•	Hexadecimal (0x...) — base-16 numbering used to represent memory addresses
+•	Memory address — every variable lives at a specific address in RAM
+•	Pointer (*) — a variable that stores a memory address
+•	Address-of operator (&) — gives you the address of a variable
+•	Pointer arithmetic — move through memory address by address
+•	Strings are char* — a pointer to the first character
+
+Dynamic Memory Allocation
+•	malloc() — allocate a block of memory on the heap
+•	calloc() — like malloc but zeroes the memory
+•	realloc() — resize an existing allocation
+•	free() — release memory when done (forgetting = memory leak)
+
+Memory Layout
+•	Stack — local variables, function calls (managed automatically)
+•	Heap — dynamically allocated memory (managed by you)
+•	Buffer overflow — writing past the end of an array (security risk)
+•	Valgrind — tool to detect memory leaks
+
+File I/O
+•	fopen() / fclose() — open and close files
+•	fread() / fwrite() — read and write binary data
+•	JPEG/BMP file structures — files have headers describing their format
+
+Problem Set 4
+•	volume — Modify audio file volume by editing raw bytes
+•	filter — Image filters: grayscale, sepia, blur, edge-detect
+•	recover — Recover JPEG files from a raw memory card image
+
+ 
+Week 5 — Data Structures
+Now that you understand pointers and memory, you can build your own data structures from scratch in C.
+
+Linked Lists
+•	A chain of nodes, each containing data and a pointer to the next node
+•	Dynamic size — can grow and shrink unlike arrays
+•	Singly linked: each node points forward only
+•	Doubly linked: each node points forward and backward
+•	Insert: O(1) at head. Search: O(n). Delete: O(n)
+
+Hash Tables
+•	Array of buckets; a hash function maps a key to a bucket index
+•	Best case: O(1) insert, search, delete
+•	Collision handling — chaining (linked list in each bucket) or probing
+
+Tries
+•	Tree where each node represents a character (prefix tree)
+•	Used for autocomplete, dictionaries
+•	All operations O(k) where k = key length
+
+Trees
+•	Binary Search Tree (BST) — left child < parent < right child
+•	Balanced BST: O(log n) insert, search, delete
+
+Queues and Stacks
+•	Queue — FIFO (first in, first out). Like a line at a store
+•	Stack — LIFO (last in, first out). Like a pile of plates
+
+Complexity Summary
+Structure	Search
+Array	O(n)
+Linked List	O(n)
+Hash Table	O(1) avg
+Trie	O(k)
+BST (balanced)	O(log n)
+
+Problem Set 5
+•	inheritance — Simulate genetic trait inheritance
+•	speller — Spell checker using a custom hash table
+
+ 
+Week 6 — Python
+Python does in one line what C does in ten. You already know programming — now you learn a cleaner, higher-level language.
+
+Python vs C — Key Differences
+•	No semicolons, no curly braces — indentation defines code blocks
+•	Dynamic typing — no need to declare variable types
+•	No manual memory management — Python handles it automatically
+•	Strings are objects with methods: .upper(), .lower(), .strip(), .split()
+
+Key Concepts
+•	if / elif / else — same logic as C, different syntax
+•	for loops: for item in list — iterate directly over collections
+•	Functions: def name(params): return value
+•	Lists [] — like arrays, but dynamic and mixed types allowed
+•	Tuples () — immutable lists
+•	Dicts {} — key-value pairs (like hash tables)
+•	Sets {} — unique values only
+•	import and modules — reuse code from other files and libraries
+•	File I/O with open() — read and write files in plain Python
+•	Regular expressions (re module) — pattern matching in strings
+•	Exception handling: try / except — catch and handle errors gracefully
+•	OOP basics: classes, objects, methods, __init__
+•	sys.argv — command-line arguments in Python
+
+Problem Set 6 (Python ports)
+•	hello, mario, cash/credit, readability — re-implement C psets in Python
+•	dna — DNA profile matching using Short Tandem Repeats (STRs)
+
+ 
+Week 7 — SQL
+Data lives in databases. SQL lets you store, query, and manipulate structured data with a declarative syntax — you describe what you want, not how to get it.
+
+Core SQL Commands
+•	SELECT — retrieve data from a table
+•	INSERT INTO — add a new row
+•	UPDATE — modify existing rows
+•	DELETE FROM — remove rows
+
+Filtering and Sorting
+•	WHERE — filter rows by condition
+•	LIKE — pattern match (% is wildcard)
+•	IN — match against a list of values
+•	BETWEEN — range condition
+•	ORDER BY — sort results
+•	GROUP BY — group rows for aggregation
+•	HAVING — filter groups (like WHERE but for GROUP BY)
+
+Aggregations
+•	COUNT() — count rows
+•	SUM() — total of a column
+•	AVG() — average
+•	MIN() / MAX() — smallest / largest
+
+Joins
+•	JOIN / INNER JOIN — rows that match in both tables
+•	LEFT JOIN — all rows from left table, matching rows from right
+•	Subqueries — a SELECT inside another SELECT
+
+Performance and Security
+•	Indexes — speed up searches on a column (like a book index)
+•	SQL Injection — attacker injects SQL via user input. Always use parameterized queries
+•	Python + SQL with cs50: db.execute('SELECT * FROM t WHERE id = ?', id)
+
+Problem Set 7
+•	songs — Analyze Spotify song data
+•	movies — Query an IMDb movie database
+•	fiftyville — Solve a mystery purely with SQL queries
+
+ 
+Week AI — Artificial Intelligence
+A conceptual overview of AI: how machines learn, how language models work, and how to use them effectively.
+
+Key Concepts
+•	Generative AI — AI that produces new content (text, images, code)
+•	Large Language Models (LLMs) — trained on massive text data; predict the next token
+•	Prompt Engineering — crafting inputs to get useful outputs from AI
+•	System prompts vs. user prompts — system sets context; user asks the question
+•	Decision Trees — tree-shaped structure of if/else decisions
+•	Minimax algorithm — game AI that minimizes the opponent's best move
+•	Machine Learning — systems that learn from data rather than explicit rules
+•	Reinforcement Learning — agent learns by trial and reward
+•	Deep Learning — neural networks with many layers
+•	Transformer Architecture — the architecture behind modern LLMs (attention mechanism)
+
+No problem set this week — it is a supplemental/conceptual week.
+
+ 
+Week 8 — HTML, CSS, JavaScript
+The front end of the web. You learn how browsers receive, render, and interact with web pages.
+
+How the Internet Works
+•	IP address — unique identifier for every device on a network
+•	DNS — translates domain names (google.com) to IP addresses
+•	TCP/IP — protocols that guarantee data delivery
+•	HTTP/HTTPS — application layer protocols for transferring web pages
+
+HTML
+•	HyperText Markup Language — defines the structure and content of a page
+•	Tags: <html>, <head>, <body>, <div>, <p>, <h1>-<h6>, <a>, <img>, <form>, <input>
+•	Attributes give tags extra info: href, src, id, class, type, name
+•	Forms collect user input and send it to a server
+
+CSS
+•	Cascading Style Sheets — controls visual appearance
+•	Selectors: element (p), class (.name), id (#name)
+•	Box model: content → padding → border → margin
+•	Flexbox — modern layout system for aligning and distributing elements
+•	Responsive design — pages that look good on all screen sizes
+
+JavaScript
+•	Runs in the browser; makes pages interactive
+•	DOM manipulation: document.querySelector(), getElementById()
+•	Events: addEventListener('click', function) — respond to user actions
+•	fetch() API — make HTTP requests from the browser without reloading the page
+•	JSON — lightweight data format for sending/receiving data: JSON.parse(), JSON.stringify()
+•	Async JS — code that waits for a response without freezing the page
+
+Problem Set 8
+•	trivia — Trivia quiz webpage with HTML, CSS, JS
+•	homepage — Personal homepage using all three technologies
+
+ 
+Week 9 — Flask
+Build real, dynamic web applications with Python. Flask connects a Python backend to HTML frontend templates.
+
+Key Concepts
+•	Flask — a minimal Python web framework
+•	Routes — map URL paths to Python functions using @app.route('/path')
+•	HTTP GET — retrieve a page. HTTP POST — submit data to the server
+•	Jinja2 templates — HTML files with Python logic embedded: {{ variable }}, {% for %}, {% if %}
+•	Template inheritance — a base layout that other pages extend
+•	request.form — access data submitted via a POST form
+•	Sessions and cookies — store user-specific data across requests
+•	redirect() — send user to a different URL
+•	render_template() — render an HTML template and return it
+•	SQLite with Flask — use cs50's SQL() to query a database from Python
+•	REST APIs — design pattern for web services using HTTP methods
+
+Basic Flask Pattern
+from flask import Flask, render_template, request, redirect, session from cs50 import SQL  app = Flask(__name__) db = SQL("sqlite:///database.db")  @app.route("/", methods=["GET", "POST"]) def index():     if request.method == "POST":         # handle form submission         pass     return render_template("index.html")
+
+Problem Set 9
+•	birthdays — Birthday tracker web app with Flask + SQLite
+•	finance — C$50 Finance: stock trading simulation with real stock prices
+
+ 
+Week 10 — The End
+A look back at everything covered, and a look forward at where to go next.
+
+What You've Learned
+•	C: memory, pointers, data structures from scratch
+•	Python: high-level programming, libraries, file I/O
+•	SQL: relational databases, querying, joins
+•	Web: HTML, CSS, JavaScript, Flask
+•	Algorithms: search, sort, complexity analysis
+•	AI: LLMs, prompt engineering, neural networks
+
+What to Learn Next
+•	CS50P — Python in depth
+•	CS50W — Web development with Django and React
+•	CS50AI — Artificial intelligence with Python
+•	CS50SQL — Databases in depth
+•	Open source contribution, personal projects, internships
+
+ 
+Final Project
+Your opportunity to build something of your own. No restrictions on language, topic, or scope — as long as it draws on what you learned in CS50.
+
+Requirements
+•	Implemented in any language(s)
+•	Must reflect CS50 course content
+•	Short video demo (~2 minutes) uploaded to YouTube
+•	A README.md describing what your project does and how
+•	Submitted via submit.cs50.io
+
+Tips
+•	Start small — a focused, working project beats an ambitious broken one
+•	Pick something you'd actually use or share
+•	The README matters — write it as if explaining to someone unfamiliar with your project
+
+cs50.harvard.edu/x
