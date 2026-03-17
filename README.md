@@ -66,15 +66,9 @@ After all weeks: **Submit Final Project**
   - [Week 9 — Flask](#week-9--flask)
   - [Week 10 — The End](#week-10--the-end)
   - [Final Project](#-final-project)
+  📖 [Final Project Guidelines](https://cs50.harvard.edu/x/2026/project/)
 
  ---
-
-## 📅 Weekly Breakdown
- 
-
-📖 [Final Project Guidelines](https://cs50.harvard.edu/x/2026/project/)
-
----
 
 ## 🛠 Core Tools & Resources
 
