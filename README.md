@@ -34,13 +34,7 @@ CS50x is Harvard University's introduction to computer science and the art of pr
   - [Week 9 — Flask](#week-9--flask)
   - [Week 10 — The End](#week-10--the-end)
   - [Final Project](#-final-project)
-- [Core Tools & Resources](#-core-tools--resources)
-- [CS50 Library Reference](#-cs50-library-reference)
-- [Key Concepts Glossary](#-key-concepts-glossary)
-- [Official Links](#-official-links)
-- [Repository Structure](#-repository-structure)
-- [Academic Honesty](#-academic-honesty)
-
+ 
 ---
 
 ## 🏛 About CS50x
