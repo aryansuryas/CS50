@@ -1,6 +1,6 @@
 Harvard CS50x — Complete Course Notes
 Introduction to Computer Science — All 12 Weeks
-Week 0 — Scratch
+🔴🟡🟢 Week 0 — Scratch
 Introduction to computational thinking using visual, block-based programming. No typing required — the focus is on ideas and logic.
 
 Key Concepts
@@ -20,8 +20,7 @@ response = client.responses.create(
 )
 print(response.output_text)
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-from openai import OpenAI
+ from openai import OpenAI
 client = OpenAI()
 user_prompt = input("Prompt: ")
 system_prompt = "Limit your answer to one sentence. Pretend you're a cat."d
@@ -240,7 +239,7 @@ Problem Set 0
 Build an interactive project in Scratch — a game, animation, or story. Must use: at least one conditional, one loop, one variable, and one custom block.
 
  
-Week 1 — C
+🔴🟡🟢 Week 1 — C
 Transition from visual to text-based programming with C. You learn how a computer actually executes code — no magic.
 
 Key Concepts
@@ -310,7 +309,7 @@ Problem Set 1
 •	cash or credit — Greedy algorithm / Luhn's Algorithm
 
  
-Week 2 — Arrays
+🔴🟡🟢 Week 2 — Arrays
 Deeper into C: how data is stored in memory, how strings work under the hood, and how programs receive input from the command line.
 
 Key Concepts
@@ -335,7 +334,7 @@ Problem Set 2
 •	caesar or substitution — Cipher encryption
 
  
-Week 3 — Algorithms
+🔴🟡🟢 Week 3 — Algorithms
 How do you search for something? How do you sort a list? How do you measure how fast (or slow) your solution is? This week answers all three.
 
 Searching
@@ -366,7 +365,7 @@ Problem Set 3
 •	runoff or tideman — Ranked-choice / Condorcet voting
 
  
-Week 4 — Memory
+🔴🟡🟢 Week 4 — Memory
 The most conceptually challenging week. You learn what memory actually is, how pointers work, and how to manage memory manually.
 
 Key Concepts
@@ -400,7 +399,7 @@ Problem Set 4
 •	recover — Recover JPEG files from a raw memory card image
 
  
-Week 5 — Data Structures
+🔴🟡🟢 Week 5 — Data Structures
 Now that you understand pointers and memory, you can build your own data structures from scratch in C.
 
 Linked Lists
@@ -441,7 +440,7 @@ Problem Set 5
 •	speller — Spell checker using a custom hash table
 
  
-Week 6 — Python
+🔴🟡🟢 Week 6 — Python
 Python does in one line what C does in ten. You already know programming — now you learn a cleaner, higher-level language.
 
 Python vs C — Key Differences
@@ -470,7 +469,7 @@ Problem Set 6 (Python ports)
 •	dna — DNA profile matching using Short Tandem Repeats (STRs)
 
  
-Week 7 — SQL
+🔴🟡🟢Week 7 — SQL
 Data lives in databases. SQL lets you store, query, and manipulate structured data with a declarative syntax — you describe what you want, not how to get it.
 
 Core SQL Commands
@@ -528,7 +527,7 @@ Key Concepts
 No problem set this week — it is a supplemental/conceptual week.
 
  
-Week 8 — HTML, CSS, JavaScript
+🔴🟡🟢 Week 8 — HTML, CSS, JavaScript
 The front end of the web. You learn how browsers receive, render, and interact with web pages.
 
 How the Internet Works
@@ -563,7 +562,7 @@ Problem Set 8
 •	homepage — Personal homepage using all three technologies
 
  
-Week 9 — Flask
+🔴🟡🟢 Week 9 — Flask
 Build real, dynamic web applications with Python. Flask connects a Python backend to HTML frontend templates.
 
 Key Concepts
@@ -587,7 +586,7 @@ Problem Set 9
 •	finance — C$50 Finance: stock trading simulation with real stock prices
 
  
-Week 10 — The End
+🔴🟡🟢 Week 10 — The End
 A look back at everything covered, and a look forward at where to go next.
 
 What You've Learned
@@ -606,7 +605,7 @@ What to Learn Next
 •	Open source contribution, personal projects, internships
 
  
-Final Project
+🔴🟡🟢 Final Project
 Your opportunity to build something of your own. No restrictions on language, topic, or scope — as long as it draws on what you learned in CS50.
 
 Requirements
