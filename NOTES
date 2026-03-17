@@ -255,6 +255,55 @@ Key Concepts
 •	printf and scanf — output and input in C
 •	cs50.h library: get_int(), get_string(), get_float()
 
+ project Scratch project 
+------------------------------------------------------------------------------------- WEEK 1---------------------------------------------------------------------------
+# C Programming :
+
+1️⃣ Creating & Editing Files
+
+code filename                                     Opens or creates a file in VS Code. You can add extensions like .c or .cpp.
+Examples: code hello.c, code hello.cpp
+.c / .cpp                                          Source code files for C/C++
+Header files (.h)                                  Optional, used for declarations (see manual.cs50.io)
+
+
+2️⃣ Compiling & Running Programs
+Command
+Purpose
+make hello                                   Compiles program using a Makefile (or built-in rules)
+./hello                                      Runs the compiled executable
+
+
+3️⃣ Terminal Basics
+ls                                          Lists files and folders in the current directory
+cd foldername                               Moves into a folder (directory)
+cd ..                                       Moves back one directory (parent folder)
+mkdir foldername                            Creates a new folder (directory)
+rm filename                                 Deletes a file (rm hello.c)
+mv filename foldername                      Moves file to a folder
+mv filename newname                         Renames a file
+cp filename newfile                         Copies a file
+ctrl + L                                    Clears terminal line / new line
+clear                                       Clears entire terminal screen
+
+
+4️⃣ C/C++ Programming Notes
+Escape Sequences
+\n → New line
+\" → Print double quotes inside a string
+Example:
+printf("Hello \"world\"\n");
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Example:
+void greet(string name) {               // parameter: name   Parameters → variables defined in function definition
+    cout << "Hello " << name;
+}
+greet("John");                  // argument: "John"            Arguments → actual values passed when calling function
+
+
+
+
 Problem Set 1
 •	hello — Hello, World in C
 •	mario — Print pyramid patterns using loops
