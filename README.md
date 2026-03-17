@@ -1,5 +1,10 @@
 # 🎓 Harvard CS50x — Introduction to Computer Science X 2025
+![CS50](https://img.shields.io/badge/Harvard-CS50x-crimson?style=for-the-badge&logo=harvard&logoColor=white)
+![Language](https://img.shields.io/badge/Languages-C%20%7C%20Python%20%7C%20SQL%20%7C%20JS-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed%20✓-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
+ 
 
 > *"What ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself when you began."*
 > — David J. Malan
@@ -12,12 +17,6 @@ CS50x is Harvard University's introduction to computer science and the art of pr
 **Cost:** Free (Certificate optional)  
 **Official Site:** [cs50.harvard.edu/x](https://cs50.harvard.edu/x)
 
-
-![CS50](https://img.shields.io/badge/Harvard-CS50x-crimson?style=for-the-badge&logo=harvard&logoColor=white)
-![Language](https://img.shields.io/badge/Languages-C%20%7C%20Python%20%7C%20SQL%20%7C%20JS-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed%20✓-brightgreen?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
- 
 
 - [About CS50x](#-about-cs50x)
 - [Course Structure](#-course-structure)
