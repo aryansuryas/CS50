@@ -1,7 +1,7 @@
 # 🎓 Harvard CS50x — Introduction to Computer Science 2025
 
 ![CS50](https://img.shields.io/badge/Harvard-CS50x-crimson?style=for-the-badge&logo=harvard&logoColor=white)
-![Language](https://img.shields.io/badge/Languages-C%20%7C%20Python%20%7C%20%7C%20C%20%7-blue?style=for-the-badge)
+![Language](https://img.shields.io/badge/Languages-C%20%7C%20Python%20%7C%20SQL%20%7C%20JS-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed%20✓-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
