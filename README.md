@@ -5,10 +5,6 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
  
-
-> *"What ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself when you began."*
-> — David J. Malan
-
 CS50x is Harvard University's introduction to computer science and the art of programming. It teaches you to think algorithmically and solve problems efficiently — not just in one language, but fundamentally, so you can learn any language on your own.
 
 **Instructor:** Prof. David J. Malan  
@@ -65,8 +61,7 @@ After all weeks: **Submit Final Project**
   - [Week 8 — HTML, CSS, JavaScript](#week-8--html-css-javascript)
   - [Week 9 — Flask](#week-9--flask)
   - [Week 10 — The End](#week-10--the-end)
-  - [Final Project](#-final-project)
-  📖 [Final Project Guidelines](https://cs50.harvard.edu/x/2026/project/)
+  - [Final Project](#-final-project) & [Guidelines](https://cs50.harvard.edu/x/2026/project/)
 
  ---
 
