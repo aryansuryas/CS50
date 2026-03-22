@@ -119,7 +119,7 @@ bool   active = true;        // boolean (needs #include <stdbool.h>)
 string name   = "Alice";     // CS50 string (needs #include <cs50.h>)
 ```
 
-### Data Types Reference
+### Data Types References
 
 | Type | Size | Range | Example |
 |---|---|---|---|
