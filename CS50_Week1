@@ -1,106 +1,651 @@
-CS50 Introduction to Computer Science X 2025
+# 📚 CS50 — Week 1: C Programming
+> **Harvard University** | David J. Malan  
+> Complete notes covering all Week 1 concepts
 
-WEEK 1 — C PROGRAMMING
+---
 
-Complete Step-by-Step Notes
-Harvard University  |  David J. Malan
+## Table of Contents
+1. [From Scratch to C](#1-from-scratch-to-c)
+2. [Hello, World!](#2-hello-world)
+3. [Compiling & Running](#3-compiling--running)
+4. [Variables & Data Types](#4-variables--data-types)
+5. [printf & Format Specifiers](#5-printf--format-specifiers)
+6. [User Input — CS50 Library](#6-user-input--cs50-library)
+7. [Operators](#7-operators)
+8. [Conditionals](#8-conditionals)
+9. [Loops](#9-loops)
+10. [Functions](#10-functions)
+11. [Command-Line Arguments](#11-command-line-arguments)
+12. [Memory, Overflow & Type Casting](#12-memory-overflow--type-casting)
+13. [Common Libraries](#13-common-libraries)
+14. [Problem Set 1 Tips](#14-problem-set-1-tips)
+15. [Style & Debugging](#15-style--debugging)
+16. [Quick Reference Cheat Sheet](#16-quick-reference-cheat-sheet)
 
-1. From Scratch to C
-In Week 0, you used Scratch, a visual, block-based language. Week 1 transitions to C, a text-based, compiled language. Despite the syntax differences, the same fundamental ideas apply: variables, loops, conditions, and functions.
+---
 
-Key Idea: Everything you did in Scratch can be done in C — just with different syntax.
+## 1. From Scratch to C
 
+In Week 0 you used **Scratch** (visual blocks). Week 1 moves to **C** — a text-based, compiled language.  
+The same core ideas still apply: variables, loops, conditions, functions — just different syntax.
 
-1.1 Why Learn C?
-C is low-level: it teaches how memory and hardware actually work.
-C is the foundation of many modern languages (Python, Java, etc.).
-Learning C builds disciplined, precise thinking about programming.
-CS50 uses C before higher-level languages to build strong fundamentals.
+| Scratch | C Equivalent |
+|---|---|
+| `say "Hello"` | `printf("Hello\n");` |
+| `set x to 0` | `int x = 0;` |
+| `repeat 10` | `for (int i = 0; i < 10; i++)` |
+| `if <condition>` | `if (condition)` |
 
-2. Your First C Program — Hello, World!
-2.1 The Code
+> **Why learn C?** It teaches how memory and hardware actually work. Most modern languages (Python, Java) are built on top of C concepts.
+
+---
+
+## 2. Hello, World!
+
+```c
 #include <stdio.h>
-
 
 int main(void)
 {
     printf("Hello, World!\n");
     return 0;
 }
+```
 
-2.2 Line-by-Line Explanation
-Line
-What it does
+### Line-by-Line Breakdown
+
+| Line | Meaning |
+|---|---|
+| `#include <stdio.h>` | Import the Standard I/O library (gives you `printf`) |
+| `int main(void)` | Entry point — every C program starts here |
+| `{ }` | Curly braces define the body/block of code |
+| `printf("Hello, World!\n");` | Print to screen. `\n` = newline. `;` ends every statement |
+| `return 0;` | Signal to the OS that the program finished successfully |
+
+---
+
+## 3. Compiling & Running
+
+C is a **compiled** language — source code must be converted to machine code before it can run.
+
+### The 4-Step Compilation Pipeline
+
+```
+Source Code (.c)
+      │
+      ▼
+1. Preprocessing   → handles #include, #define
+2. Compiling       → translates C to assembly
+3. Assembling      → converts assembly to machine code (.o)
+4. Linking         → combines object files + libraries → executable
+```
+
+### Commands
+
+```bash
+# Using CS50's make (recommended)
+make hello           # compiles hello.c → ./hello
+
+# Using clang directly
+clang -o hello hello.c
+
+# Run the program
+./hello
+```
+
+### Common Compiler Errors
+
+| Error | Cause |
+|---|---|
+| `syntax error` | Missing `;`, mismatched `{}` |
+| `undeclared identifier` | Using a variable before declaring it |
+| `implicit declaration` | Called a function without its `#include` |
+| `linker error` | Function declared but not defined |
+
+---
+
+## 4. Variables & Data Types
+
+A variable is a **named container in memory** that holds a value. Every variable must have a declared type.
+
+### Declaration & Initialization
+
+```c
+int    age    = 20;          // integer
+float  gpa    = 3.9;         // single-precision decimal
+double pi     = 3.14159265;  // double-precision decimal
+char   grade  = 'A';         // single character (use single quotes)
+bool   active = true;        // boolean (needs #include <stdbool.h>)
+string name   = "Alice";     // CS50 string (needs #include <cs50.h>)
+```
+
+### Data Types Reference
+
+| Type | Size | Range | Example |
+|---|---|---|---|
+| `int` | 4 bytes | −2,147,483,648 to 2,147,483,647 | `int x = 5;` |
+| `long` | 8 bytes | Much larger integers | `long n = 1000000;` |
+| `float` | 4 bytes | ~7 decimal digits precision | `float f = 3.14;` |
+| `double` | 8 bytes | ~15 decimal digits precision | `double d = 3.14159;` |
+| `char` | 1 byte | Single character (0–255) | `char c = 'A';` |
+| `bool` | 1 byte | `true` or `false` | `bool b = true;` |
+
+> ⚠️ **Naming Rules:** Variable names can contain letters, digits, `_` but cannot start with a digit. Use descriptive names: `score` not `s`.
+
+---
+
+## 5. printf & Format Specifiers
+
+`printf` uses **format specifiers** as placeholders replaced by variable values at runtime.
+
+```c
+int age = 20;
+printf("I am %i years old.\n", age);
+// Output: I am 20 years old.
+```
+
+### Format Specifiers
+
+| Specifier | Type | Example |
+|---|---|---|
+| `%i` or `%d` | `int` | `printf("%i", 42);` → `42` |
+| `%f` | `float` / `double` | `printf("%.2f", 3.14159);` → `3.14` |
+| `%c` | `char` | `printf("%c", 'A');` → `A` |
+| `%s` | `string` | `printf("%s", "Hi");` → `Hi` |
+| `%li` | `long` | `printf("%li", 123456789L);` |
+| `%%` | Literal `%` | `printf("100%%");` → `100%` |
+
+> **Tip:** Control decimal places with `%.Nf` — e.g., `%.2f` shows 2 decimal places.
+
+### Escape Sequences
+
+| Sequence | Effect |
+|---|---|
+| `\n` | Newline |
+| `\t` | Tab |
+| `\"` | Double quote inside string |
+| `\\` | Literal backslash |
+| `\0` | Null character (end of string) |
+
+---
+
+## 6. User Input — CS50 Library
+
+CS50 provides helper functions to safely collect input without complex C mechanics.
+
+```c
+#include <cs50.h>
 #include <stdio.h>
-Includes the Standard Input/Output library — gives you access to printf and other I/O functions.
+
 int main(void)
-The entry point of every C program. Execution always begins here. 'int' means it returns an integer; 'void' means no arguments.
-{  ...  }
-Curly braces define a block of code — the body of main().
-printf("Hello, World!\n");
-Prints text to the screen. \n is a newline character (moves cursor to next line). The semicolon ends the statement.
-return 0;
-Returns 0 to the OS, signaling the program exited successfully.
+{
+    string name = get_string("What is your name? ");
+    int age = get_int("How old are you? ");
+    printf("Hi, %s! You are %i years old.\n", name, age);
+}
+```
 
+### CS50 Input Functions
 
-3. Compiling and Running a C Program
-C is a compiled language — you must convert source code (.c file) into machine code before running it.
+| Function | Returns | Use For |
+|---|---|---|
+| `get_string(prompt)` | `string` | A line of text |
+| `get_int(prompt)` | `int` | An integer |
+| `get_float(prompt)` | `float` | A decimal number |
+| `get_double(prompt)` | `double` | High-precision decimal |
+| `get_long(prompt)` | `long` | A large integer |
+| `get_char(prompt)` | `char` | A single character |
 
-3.1 The Compilation Process
-Step 1 — Preprocessing: Handles #include, #define directives.
-Step 2 — Compiling: Translates C code to assembly language.
-Step 3 — Assembling: Converts assembly to machine code (object file).
-Step 4 — Linking: Combines object files and libraries into an executable.
+> These functions **re-prompt automatically** if the user enters invalid input.
 
-3.2 Using make and clang
-$ make hello          # CS50 shorthand — compiles hello.c into ./hello
-$ clang -o hello hello.c   # Manual compilation with clang
-$ ./hello             # Run the program
+---
 
-Tip: CS50's make command automatically links the cs50 library and common flags. For custom programs, use: clang -o output file.c -lcs50
+## 7. Operators
 
+### Arithmetic
 
-3.3 Common Compiler Errors
-Syntax error: Missing semicolon, mismatched braces.
-Undeclared variable: Using a variable before declaring it.
-Implicit function declaration: Calling a function without including its header.
-Linker error: Function declared but not defined or library not linked.
+```c
+int a = 10, b = 3;
 
-4. Variables and Data Types
-A variable is a named container in memory that stores a value. Every variable in C must have a declared type.
+a + b   // 13  — addition
+a - b   // 7   — subtraction
+a * b   // 30  — multiplication
+a / b   // 3   — integer division (truncates decimals!)
+a % b   // 1   — modulo (remainder)
+```
 
-4.1 Declaring and Initializing Variables
-int age = 20;            // integer
-float gpa = 3.9;         // floating-point (single precision)
-double pi = 3.14159;     // double-precision float
-char grade = 'A';        // single character
-bool active = true;      // boolean (requires <stdbool.h>)
-string name = "Alice";  // CS50 string type (requires cs50.h)
+> ⚠️ `10 / 3 = 3` in C, **not** `3.33`. Cast to float: `(float)10 / 3 = 3.33`
 
-4.2 Common C Data Types
-Type
-Size
-Range / Precision
-Example
-int
-4 bytes
--2,147,483,648 to 2,147,483,647
-int x = 5;
-long
-8 bytes
-Much larger integers
-long big = 1000000;
-float
-4 bytes
-~7 decimal digits
-float f = 3.14;
-double
-8 bytes
-~15 decimal digits
-double d = 3.14159;
-char
-1 byte
-0 to 255 (one character)
+### Shorthand Assignment
+
+```c
+x += 5;   // x = x + 5
+x -= 2;   // x = x - 2
+x *= 3;   // x = x * 3
+x /= 2;   // x = x / 2
+x++;      // x = x + 1
+x--;      // x = x - 1
+```
+
+### Comparison (return `true` / `false`)
+
+```c
+x == y   // equal to
+x != y   // not equal to
+x >  y   // greater than
+x <  y   // less than
+x >= y   // greater than or equal
+x <= y   // less than or equal
+```
+
+### Logical
+
+```c
+x && y   // AND — both must be true
+x || y   // OR  — at least one must be true
+!x       // NOT — inverts true/false
+```
+
+---
+
+## 8. Conditionals
+
+### if / else if / else
+
+```c
+int score = 85;
+
+if (score >= 90)
+{
+    printf("Grade: A\n");
+}
+else if (score >= 80)
+{
+    printf("Grade: B\n");
+}
+else
+{
+    printf("Grade: C or below\n");
+}
+```
+
+### switch
+
+Use `switch` when checking one variable against many constant values.
+
+```c
+char grade = 'B';
+
+switch (grade)
+{
+    case 'A':
+        printf("Excellent!\n");
+        break;
+    case 'B':
+        printf("Good job!\n");
+        break;
+    default:
+        printf("Keep trying!\n");
+}
+```
+
+> ⚠️ Always include `break;` — without it, execution **falls through** to the next case.
+
+### Ternary Operator
+
+```c
+// condition ? value_if_true : value_if_false
+string result = (score >= 60) ? "Pass" : "Fail";
+```
+
+---
+
+## 9. Loops
+
+### while — use when count is not known in advance
+
+```c
+int i = 0;
+while (i < 5)
+{
+    printf("i = %i\n", i);
+    i++;
+}
+```
+
+### do-while — body always runs at least once (great for input validation)
+
+```c
+int n;
+do
+{
+    n = get_int("Enter a positive number: ");
+}
+while (n <= 0);
+```
+
+### for — use when you know the exact count
+
+```c
+// for (init; condition; update)
+for (int i = 0; i < 5; i++)
+{
+    printf("Row %i\n", i);
+}
+```
+
+### Loop Comparison
+
+| Loop | Best When | Runs At Least Once? |
+|---|---|---|
+| `while` | Count unknown | No |
+| `do-while` | Must run once (input validation) | **Yes** |
+| `for` | Exact count known | No |
+
+### Nested Loops — Mario Pyramid Example
+
+```c
+int height = 4;
+
+for (int i = 1; i <= height; i++)
+{
+    // print spaces
+    for (int j = 0; j < height - i; j++)
+        printf(" ");
+
+    // print hashes
+    for (int k = 0; k < i; k++)
+        printf("#");
+
+    printf("\n");
+}
+```
+
+**Output:**
+```
+   #
+  ##
+ ###
+####
+```
+
+---
+
+## 10. Functions
+
+Functions let you break your program into **reusable, named pieces of logic**.
+
+### Anatomy
+
+```c
+return_type function_name(parameter_type parameter_name)
+{
+    // body
+    return value;  // omit if return_type is void
+}
+```
+
+### Full Example
+
+```c
+#include <stdio.h>
+
+// Prototype — tells the compiler the function exists before main()
+int square(int n);
+
+int main(void)
+{
+    printf("Square of 5 = %i\n", square(5));
+}
+
+// Definition
+int square(int n)
+{
+    return n * n;
+}
+```
+
+### void Functions
+
+```c
+void greet(string name)
+{
+    printf("Hello, %s!\n", name);
+    // no return statement needed
+}
+```
+
+### Variable Scope
+
+```c
+int global = 10;   // global — accessible everywhere (use sparingly)
+
+int main(void)
+{
+    int local = 5;   // local — only accessible inside main()
+}
+```
+
+> **Best practice:** Avoid global variables. Pass values via parameters and return values instead.
+
+---
+
+## 11. Command-Line Arguments
+
+```c
+int main(int argc, string argv[])
+{
+    if (argc == 2)
+        printf("Hello, %s!\n", argv[1]);
+    else
+        printf("Usage: ./hello name\n");
+}
+```
+
+**Run:**
+```bash
+$ ./hello Alice
+Hello, Alice!
+```
+
+| Variable | Meaning | Example |
+|---|---|---|
+| `argc` | Argument count (including program name) | `2` |
+| `argv[0]` | Program name | `"./hello"` |
+| `argv[1]` | First argument | `"Alice"` |
+| `argv[2]` | Second argument | … |
+
+---
+
+## 12. Memory, Overflow & Type Casting
+
+### Integer Overflow
+
+Every type has a max value. Exceeding it **wraps around** unexpectedly.
+
+```c
+int x = 2147483647;   // max int
+x = x + 1;
+// x is now -2147483648  ← overflow!
+```
+
+### Floating-Point Imprecision
+
+Computers can't represent all decimals exactly in binary.
+
+```c
+printf("%.20f\n", 0.1 + 0.2);
+// 0.30000000000000004441  (not exactly 0.3)
+```
+
+### Type Casting
+
+Force one type to behave as another.
+
+```c
+int a = 1, b = 3;
+
+// Without cast — integer division
+printf("%i\n", a / b);         // 0
+
+// With cast — decimal division
+printf("%.2f\n", (float) a / b);  // 0.33
+```
+
+---
+
+## 13. Common Libraries
+
+| Library | `#include` | Key Functions |
+|---|---|---|
+| Standard I/O | `<stdio.h>` | `printf`, `scanf`, `fgets` |
+| Standard Library | `<stdlib.h>` | `malloc`, `free`, `exit`, `atoi` |
+| String | `<string.h>` | `strlen`, `strcmp`, `strcpy` |
+| Math | `<math.h>` | `sqrt`, `pow`, `round`, `floor` |
+| Boolean | `<stdbool.h>` | `bool`, `true`, `false` |
+| CS50 | `<cs50.h>` | `get_string`, `get_int`, etc. |
+
+> When using `<math.h>`, compile with `-lm`: `clang -o program program.c -lm`
+
+---
+
+## 14. Problem Set 1 Tips
+
+### Mario (Less / More)
+
+- Print a right-aligned pyramid of `#` using a user-specified height (1–8)
+- Use **do-while** to validate input
+- Use **nested for loops** — outer for rows, inner for spaces then hashes
+
+```c
+int height;
+do
+{
+    height = get_int("Height: ");
+}
+while (height < 1 || height > 8);
+
+for (int i = 1; i <= height; i++)
+{
+    for (int j = 0; j < height - i; j++) printf(" ");
+    for (int k = 0; k < i; k++) printf("#");
+    printf("\n");
+}
+```
+
+### Credit (Luhn's Algorithm)
+
+```
+1. Take every other digit from the right, multiply by 2.
+   If the result is 2 digits, add those digits together.
+2. Sum those results.
+3. Add the sum of the remaining digits.
+4. If the total % 10 == 0 → VALID card.
+```
+
+- Use `%` and `/` to extract individual digits
+- Identify card type by prefix and length:
+  - **Visa** — starts with 4, length 13 or 16
+  - **MasterCard** — starts with 51–55, length 16
+  - **Amex** — starts with 34 or 37, length 15
+
+---
+
+## 15. Style & Debugging
+
+### CS50 Style Guide
+
+```c
+// ✅ Good style
+int main(void)
+{
+    int score = 95;
+
+    if (score >= 90)
+    {
+        printf("A\n");
+    }
+}
+
+// ❌ Bad style
+int main(void){int score=95;if(score>=90){printf("A\n");}}
+```
+
+- Indent with **4 spaces**
+- Opening brace `{` on its **own line**
+- Meaningful names: `counter` not `c`, `height` not `h`
+- One statement per line
+
+### CS50 Tools
+
+```bash
+style50 hello.c                              # check code style
+check50 cs50/problems/2024/x/hello           # auto-grade submission
+debug50 ./hello                              # graphical step debugger
+```
+
+### Debugging Tips
+
+1. **Read compiler errors top-to-bottom** — fix the first error first; others often cascade
+2. **printf debugging** — print variable values to trace what's happening
+
+```c
+printf("DEBUG: score = %i\n", score);
+```
+
+3. **Rubber duck debugging** — explain your code out loud line by line; you'll often spot the bug yourself
+4. **Check your logic with edge cases** — test with `0`, negative numbers, and the maximum value
+
+---
+
+## 16. Quick Reference Cheat Sheet
+
+### Full Program Template
+
+```c
+#include <cs50.h>
+#include <stdio.h>
+
+// Prototype
+void print_row(int width);
+
+int main(void)
+{
+    int n = get_int("Size: ");
+
+    for (int i = 1; i <= n; i++)
+    {
+        print_row(i);
+    }
+
+    return 0;
+}
+
+void print_row(int width)
+{
+    for (int j = 0; j < width; j++)
+    {
+        printf("#");
+    }
+    printf("\n");
+}
+```
+
+### Key Rules to Remember
+
+| Rule | Example |
+|---|---|
+| Every statement ends with `;` | `int x = 5;` |
+| Strings use `" "`, chars use `' '` | `"hello"` vs `'h'` |
+| `=` assigns, `==` compares | `x = 5;` vs `x == 5` |
+| `int / int` truncates | `10 / 3 = 3` |
+| Cast to get decimals | `(float)10 / 3 = 3.33` |
+| Always `#include` before using library functions | `#include <stdio.h>` |
+| Prototypes go before `main()` | `int square(int n);` |
+
+---
+
+*CS50 Week 1 Notes — Harvard University*
 char c = 'A';
 bool
 1 byte
