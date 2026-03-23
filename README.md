@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
  
-CS50x is Harvard University's introduction to computer science and the art of programming. It teaches you to think algorithmically and solve problems efficiently — not just in one language, but fundamentally, so you can learn any language on your own.
+CS50 is Harvard University's introduction to computer science and the art of programming. It teaches you to think algorithmically and solve problems efficiently — not just in one language, but fundamentally, so you can learn any language on your own.
 
 **Instructor:** Prof. David J. Malan  
 **Platform:** edX / OpenCourseWare  
