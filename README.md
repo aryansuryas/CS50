@@ -8,9 +8,9 @@
  
 CS50 is Harvard University's introduction to Computer Science and the art of programming. It teaches you to think algorithmically and solve problems efficiently — not just in one language, but fundamentally, so you can learn any language on your own.
 
-**Instructor:** Prof. David J. Malan  
-**Platform:** edX / OpenCourseWare  
-**Duration:** 11 Weeks + Final Project  
+**Instructor:** Prof. David J. Malan     
+**Platform:** edX / OpenCourseWare    
+**Duration:** 11 Weeks + Final Project    
 **Cost:** Free (Certificate optional)  
 **Official Site:** [cs50.harvard.edu/x](https://cs50.harvard.edu/x)
 
