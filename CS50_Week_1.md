@@ -1,6 +1,4 @@
-# 📚 CS50 — Week 1: C Programming  📑 
-
-
+# 📚 CS50 — Week 1: C Programming  
 ## Table of Contents
 1. [From Scratch to C](#1-from-scratch-to-c)
 2. [Hello, World!](#2-hello-world)
