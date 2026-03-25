@@ -1,4 +1,4 @@
-# 📚 CS50x — Week 1: C Programming CS50x 📑 
+# 📚 CS50 — Week 1: C Programming  📑 
 
 
 ## Table of Contents
