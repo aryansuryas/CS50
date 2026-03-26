@@ -129,7 +129,7 @@ git checkout -b as              # 1️⃣ Create & switch to new branch
 git add .                       # 2️⃣ Stage changes
 git commit -m "feature done"    # 3️⃣ Commit on your branch
 git checkout main               # 4️⃣ Switch back to main
-git pull                        # 5️⃣ Get latest changes from remote
+git pull origin main            # 5️⃣ Get latest changes from remote
 git merge as                    # 6️⃣ Merge your branch into main
 git push origin main            # 7️⃣ Push merged code to GitHub
 ```
