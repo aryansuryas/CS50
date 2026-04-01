@@ -1,4 +1,4 @@
-# CS50 — Week 7: SQL
+## CS50 — Week 7: SQL
 
 **Harvard University** · David J. Malan  
 **Topic:** Relational databases, SQL queries, designing schemas, indexes, transactions, security vulnerabilities, and using Python with SQL.
