@@ -177,7 +177,7 @@ You are encouraged to:
 You must **not**:
 - Share your solutions publicly until after the submission deadline
 - Copy code from others or the internet without CS50's permission
-- Submit work that is not your own
+- Submit work that is not your own.
 
 📄 [Full Academic Honesty Policy](https://cs50.harvard.edu/x/2026/honesty/)
 
