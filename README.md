@@ -185,7 +185,7 @@ You must **not**:
 
 <div align="center">
 
-**- Aryan Surya S**
+** By - Aryan Surya S**
 
 *"What ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself when you began."*
 — David J. Malan
