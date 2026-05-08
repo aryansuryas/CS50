@@ -185,7 +185,7 @@ You must **not**:
 
 <div align="center">
 
-**Made with ❤️ while taking Harvard's CS50x**
+**Made with ❤️ while tak Aryan Surya S**
 
 *"What ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself when you began."*
 — David J. Malan
