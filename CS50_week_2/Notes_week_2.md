@@ -961,5 +961,8 @@ clang -o hello hello.c -lm    # with math library
 | Fix the first compiler error first | Later errors are often caused by the first one |
 
 ---
-
+- cowsay moo
+- cowsay -f duck moo
+- cowsay -f duck quack
+- cowsay -f dragon RAWR
 *CS50 Week 2 Notes · Harvard University · David J. Malan*
